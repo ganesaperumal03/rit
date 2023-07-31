@@ -21,7 +21,8 @@ export class UniversityMarksComponent implements OnInit {
     semester : null,
     course_code:'',
     reg_no:'',
-    grade :''
+    grade :'',
+    section:''
 
   }
 
@@ -41,7 +42,8 @@ export class UniversityMarksComponent implements OnInit {
         semester : null,
         course_code:'',
         reg_no:'',
-        grade :''
+        grade :'',
+        section:''
     
       };
   }
