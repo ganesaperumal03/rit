@@ -8,6 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent {
 
+sample='bala';
+
 loginfromdata = new FormGroup({
   username: new FormControl("",[Validators.required,Validators.pattern("[a-zA-Z].*")]),
   password : new FormControl("",[Validators.required,Validators.minLength(8),Validators.maxLength(15)])

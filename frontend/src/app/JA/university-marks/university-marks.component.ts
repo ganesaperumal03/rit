@@ -14,9 +14,9 @@ export class UniversityMarksComponent implements OnInit {
   }
 
   University_Marks_data ={
-    degree_code: 1,
+    degree_code: 2,
     batch_no :null,
-    dept_code :1,
+    dept_code :16,
     regulation_no :null,
     semester : null,
     course_code:'',
@@ -32,12 +32,13 @@ export class UniversityMarksComponent implements OnInit {
     this.http.post('http://172.16.71.2:9090/api/v1/JA//university_mark', this.University_Marks_data)
       .subscribe(
         (response) => {alert('Data saved successfully...');},
-        (error) => {console.error('Error submitting form:', error);}
+        // (error) => {console.error('Error submitting form:', error);}
+        (error) => {console.error('Error submitting form:', error); alert('There is a error to insert the data plz check the entrys');}
       );
       this.University_Marks_data ={
-        degree_code: 1,
+        degree_code: 2,
         batch_no :null,
-        dept_code :1,
+        dept_code :16,
         regulation_no :null,
         semester : null,
         course_code:'',

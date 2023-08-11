@@ -16,8 +16,8 @@ export class CourseMasterComponent implements OnInit {
 
 course_master_data = {
   course_code: '',
-  degree_code: 1,
-  dept_code: 1,
+  degree_code: 2,
+  dept_code: 16,
   year: null,
   semester: null,
   regulation: '',
@@ -35,6 +35,7 @@ course_master_data = {
 
 To_DB(): void {
   console.log(this.course_master_data);
+
   this.http.post('http://172.16.71.2:9090/api/v1/JA/', this.course_master_data)
     .subscribe(
       (response) => {
@@ -49,8 +50,8 @@ To_DB(): void {
     );
     this.course_master_data = {
       course_code: '',
-      degree_code: 1,
-      dept_code: 1,
+      degree_code: 2,
+      dept_code: 16,
       year: null,
       semester: null,
       regulation: '',

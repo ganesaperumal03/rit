@@ -11,7 +11,7 @@ export class MainpageComponent implements OnInit {
   constructor(private auth:AuthService) { }
 
   ngOnInit(): void {
-    this.auth.canAccess();
+    // this.auth.canAccess();
   }
 
 }

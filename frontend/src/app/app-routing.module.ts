@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CourseMasterComponent } from './JA/course-master/course-master.component';
+import { ErpStudentMasterComponent } from './JA/erp-student-master/erp-student-master.component';
+import { StudentTenthMarkComponent } from './JA/student-tenth-mark/student-tenth-mark.component';
 import { UniversityMarksComponent } from './JA/university-marks/university-marks.component';
 import { LoginComponent } from './login/login.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
@@ -15,9 +17,11 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'dashboard',component:DashboardComponent},
-  {path:'mainpage',component:MainpageComponent},
-  {path:'course_entry',component:CourseMasterComponent},
+  {path:'mainpage',component:MainpageComponent,children:[ {path:'course_entry',component:CourseMasterComponent},
   {path:'university_entry',component:UniversityMarksComponent},
+  {path:'10th_marks',component:StudentTenthMarkComponent},
+  {path:'erp_student_master',component:ErpStudentMasterComponent},]},
+
   
 
 
