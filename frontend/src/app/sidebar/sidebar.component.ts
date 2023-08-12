@@ -34,29 +34,29 @@ export class SidebarComponent implements OnInit {
       icon:'bx bx-wallet-alt',
       link:'/mainpage/erp_student_master'
     },
-    // {
-    //   id:5,
-    //   name:'Invoices',
-    //   icon:'bx bx-receipt',
-    //   link:'/invoices'
-    // },
-    // {
-    //   id:6,
-    //   name:'Loan Plans',
-    //   icon:'bx bx-briefcase-alt-2',
-    //   link:'/loan-types'
-    // },
-    // {
-    //   id:7,
-    //   name:'Reports',
-    //   icon:'bx bx-trending-up',
-    //   link:'/reports'
-    // },
+    {
+      id:5,
+      name:'12th_Stateboard_mark',
+      icon:'bx bx-receipt',
+      link:'/mainpage/12th_Stateboard_mark'
+    },
+    {
+      id:6,
+      name:'12th_icse_cbsc_mark',
+      icon:'bx bx-briefcase-alt-2',
+      link:'/mainpage/12th_icse_cbsc_mark'
+    },
+    {
+      id:7,
+      name:'12th_vocational_mark',
+      icon:'bx bx-trending-up',
+      link:'/mainpage/12th_vocational_mark'
+    },
     // {
     //   id:8,
-    //   name:'Settings',
+    //   name:'10th_mark',
     //   icon:'bx bx-cog',
-    //   link:'/settings'
+    //   link:'/mainpage/10th_mark'
     // },
     // {
     //   id:9,

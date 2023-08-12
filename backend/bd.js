@@ -2,9 +2,9 @@ const Pool =require('pg').Pool;
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'rit1',
-    password: '{3053}',
-    port: 5433, // Change if your PostgreSQL port is different
+    database: 'rit',
+    password: '123',
+    port: 5432, // Change if your PostgreSQL port is different
     pool: {
       max: 5,
       min: 0,
